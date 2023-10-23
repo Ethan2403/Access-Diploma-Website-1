@@ -1,0 +1,241 @@
+*{
+box-sizing: border-box;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Style the header*/
+.header{
+    background-color: aliceblue;
+    padding: 30px;
+    text-align: center;
+    font-size: 35px;
+}
+
+/*this will create three/four colums that float next to eachother */
+.column{
+    float: left;
+    width: 33%;
+    padding: 20px;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    text-align: center;
+    border-style: none;
+}
+
+
+/* clear the float after the column*/
+.row::after{
+    content: "";
+    display:table ;
+    clear: both;
+}
+/* style the footer*/
+.footer{
+    background-color: #474e5d;
+    color: #ffffff;
+    padding: 10px;
+    text-align: center;
+
+}
+
+/*responsive layout*/
+@media (max-width:600px) {
+      .column{
+        width: 100%;
+      }
+
+}
+
+ul{
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      background-color: rgb(91, 112, 158);
+}
+
+li{float: left;
+border-right: 3px solid;
+}
+li a{
+
+      display: block;
+      color: white;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+      
+    }
+    
+    li a:hover{
+        background-color: black;
+    }
+    li:last-child{
+        border-right: none;
+    }
+
+    /* Contact Page styles */
+    input[type="Text"],
+    select,
+    textarea{
+        width: 100%;
+        padding: 12px;
+        border: 1px solid #ccc;
+        margin-top: 6px;
+        margin-bottom: 16px;
+        resize: vertical;
+    }
+    
+    /* Style Submit Button */
+    input[type="submit"]{
+        background-color: lightblue;
+        color: #fff;
+        padding: 12px 20px;
+        border: none;
+        cursor: pointer;
+    }
+        /* Style Button With a Hover */
+        input[type="submit"]:hover{
+         background-color:lightskyblue;
+    }
+        .container{
+        /* border-radius: 5px; */
+        background-color: rgb(91, 112, 158);
+        padding: 10px;
+        float: center;
+        text-align: center;
+
+    }
+
+    /* About us CSS page*/
+    .card{
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.233);
+    }
+    
+    .about-section{
+padding: 50px;
+text-align: center;
+background-color: #474e5d;
+color: #ffffff;
+    }
+
+.container::after,.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+.title{
+    color: #ffffff;
+}
+.button{
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 8px;
+    color: #ffffff;
+    background-color: #000000;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+}
+.Button:hover{
+    background-color: #555555;
+}
+.nametitle{
+    color: #ffffff;
+}
+/* News CSS page*/
+.card{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.233);
+}
+
+.about-section{
+padding: 50px;
+text-align: center;
+background-color: #474e5d;
+color: #ffffff;
+}
+
+.container::after,.row::after {
+content: "";
+clear: both;
+display: table;
+}
+.title{
+color: #ffffff;
+}
+.button{
+border: none;
+outline: 0;
+display: inline-block;
+padding: 8px;
+color: #ffffff;
+background-color: #000000;
+text-align: center;
+cursor: pointer;
+width: 100%;
+}
+.Button:hover{
+background-color: #555555;
+}
+.nametitle{
+color: #ffffff}
+.container{
+    /* border-radius: 5px; */
+    background-color: rgb(91, 112, 158);
+    padding: 10px;
+    float: center;
+            text-align: center;}
+
+
+
+
+/* News page */
+.news-section{
+    text-align: center;
+    background-color: #474e5d;
+    padding: 30px;
+    color: #ffffff;
+}
+
+/* Footer Text left */
+.footer-text-left{
+
+  font-size: 25px;
+  padding-left: 40px;
+  float: left;
+  word-spacing: 20px;
+}
+a.menu:hover{
+background-color: #474e5d;
+font-size: 20px;
+
+}
+.menu{
+    color: #ffffff;
+}
+.footer-content-right{
+    padding-right: 40px;
+    margin-top: 20px;
+    float: right;
+}
+.icon-style{
+    height: 40px;
+    margin-left: 20px;
+    margin-top :5px;
+}
+.icon-style:hover{
+    background-color: #ffffff;
+    padding: 5px;
+}
+.menu{
+    color: rgb(91, 112, 158);
+}
+
+a:link
+{
+    text-decoration: none;
+}
